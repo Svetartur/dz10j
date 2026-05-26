@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        #add-block-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        #blocks-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .color-block {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.1s;
+        }
+        .color-block:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <button id="add-block-btn">Додати блок</button>
+    <div id="blocks-container"></div>
+
+    <script src="pickme.js"></script>
+</body>
+</html>

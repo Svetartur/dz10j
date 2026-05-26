@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        #text-block {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: color 0.3s;
+        }
+        .palette {
+            display: flex;
+            gap: 10px;
+        }
+        .palette-cell {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="text-block">Текст, який змінює свій колір при натисканні на палітру.</div>
+
+    <div class="palette">
+        <div class="palette-cell" data-color="red" style="background-color: red;"></div>
+        <div class="palette-cell" data-color="green" style="background-color: green;"></div>
+        <div class="palette-cell" data-color="blue" style="background-color: blue;"></div>
+        <div class="palette-cell" data-color="orange" style="background-color: orange;"></div>
+        <div class="palette-cell" data-color="purple" style="background-color: purple;"></div>
+    </div>
+
+    <script src="pickme.js"></script>
+</body>
+</html>
